@@ -1,5 +1,8 @@
 programa
 {
+	funcao exibir(inteiro mensagem){
+		escreva("\n",mensagem)
+	}
 	
 	funcao inicio()
 	{
@@ -9,10 +12,13 @@ programa
 
 		para (inteiro linha=0;linha<limite1;linha++){
 			para (inteiro coluna=0;coluna<limite2;coluna++){
-				leia(vetor[linha][coluna])
+				vetor[linha][coluna]=sorteia(1,100)
 			}
-			
-			
+		}
+		para (inteiro linha=0;linha<limite1;linha++){
+			para (inteiro coluna=0;coluna<limite2;coluna++){
+				exibir(vetor[linha][coluna])
+			}
 		}
 	}
 }
@@ -21,9 +27,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 76; 
+ * @POSICAO-CURSOR = 326; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetor, 8, 10, 5};
+ * @SIMBOLOS-INSPECIONADOS = {vetor, 11, 10, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

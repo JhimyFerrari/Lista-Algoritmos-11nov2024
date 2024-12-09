@@ -1,5 +1,8 @@
 programa
 {
+	funcao exibir(cadeia mensagem){
+		escreva("\n",mensagem)
+	}
 	
 	funcao inicio()
 	{
@@ -14,10 +17,16 @@ programa
 			}
 		}
 		
-		escreva("\n")
+		escreva("")
 		para (inteiro linha=0;linha<linhas;linha++){
 			para (inteiro coluna=0;coluna<colunas;coluna++){
 				vetorC[linha][coluna]=vetorA[linha][coluna]*vetorB[linha][coluna]
+			}
+		}
+
+		para (inteiro linha=0;linha<linhas;linha++){
+			para (inteiro coluna=0;coluna<colunas;coluna++){
+				exibir(""+vetorC[linha][coluna])
 			}
 		}
 		
@@ -36,9 +45,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 359; 
+ * @POSICAO-CURSOR = 608; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetorA, 8, 10, 6}-{vetorB, 8, 34, 6}-{vetorC, 8, 58, 6};
+ * @SIMBOLOS-INSPECIONADOS = {vetorA, 11, 10, 6}-{vetorB, 11, 34, 6}-{vetorC, 11, 58, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

@@ -1,6 +1,8 @@
 programa
 {
-	
+	funcao exibir(cadeia mensagem){
+		escreva("\n",mensagem)
+	}
 	funcao inicio()
 	{
 		const inteiro linhas=5
@@ -13,18 +15,17 @@ programa
 			}
 		}
 		
-		escreva("\n")
+	
 		
 		para (inteiro i=0;i<linhas;i++){
 			vetorDiagonal[i]=vetorA[i][linhas-(i+1)]	
-		}
+		}	
+		para (inteiro i=0;i<linhas;i++){
+			exibir(""+vetorDiagonal[i])
+		}	
 		
-	
 		
-		
-		
-		}
-		
+		}	
 	}
 
 
@@ -33,9 +34,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 308; 
+ * @POSICAO-CURSOR = 351; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetorA, 8, 10, 6}-{vetorDiagonal, 8, 34, 13};
+ * @SIMBOLOS-INSPECIONADOS = {vetorA, 10, 10, 6}-{vetorDiagonal, 10, 34, 13};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

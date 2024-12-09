@@ -1,5 +1,8 @@
 programa
 {
+	funcao exibir(cadeia mensagem){
+		escreva("\n",mensagem)
+	}
 	
 	funcao inicio()
 	{
@@ -15,7 +18,7 @@ programa
 			vetorMenoresNumeros[linha]=vetorA[linha][0]
 		}
 		
-		escreva("\n")
+		exibir("")
 		para (inteiro linha=0;linha<linhas;linha++){
 			para (inteiro coluna=1;coluna<colunas;coluna++){
 				se(vetorMaioresNumeros[linha]<vetorA[linha][coluna]){
@@ -26,6 +29,14 @@ programa
 				}
 			}
 		}
+		para (inteiro linha=0;linha<linhas;linha++){
+			exibir(""+vetorMenoresNumeros[linha])
+		}
+		exibir("")
+			para (inteiro linha=0;linha<linhas;linha++){
+			exibir(""+vetorMaioresNumeros[linha])
+		}
+		
 	
 		
 		
@@ -40,9 +51,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 654; 
+ * @POSICAO-CURSOR = 966; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetorA, 8, 10, 6}-{vetorMaioresNumeros, 8, 34, 19}-{vetorMenoresNumeros, 8, 63, 19};
+ * @SIMBOLOS-INSPECIONADOS = {vetorA, 11, 10, 6}-{vetorMaioresNumeros, 11, 34, 19}-{vetorMenoresNumeros, 11, 63, 19};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

@@ -1,6 +1,10 @@
 programa
 {
 	
+	funcao exibir(cadeia mensagem){
+		escreva("\n",mensagem)
+	}
+	
 	funcao inicio()
 	{
 		const inteiro limite1=3
@@ -12,20 +16,18 @@ programa
 				vetorA[linha][coluna]=sorteia(1,100)
 			}
 		}
-		escreva("\n")
+		exibir("")
 			para (inteiro linha=0;linha<limite1;linha++){
 			para (inteiro coluna=0;coluna<limite2;coluna++){
-				vetorB[linha][coluna]=(vetorA[linha][coluna]-1)
-				
-				
-				 	
-			}
-			
+				vetorB[linha][coluna]=(vetorA[linha][coluna]-1)	 	
+			}		
+		}
+		para (inteiro linha=0;linha<limite1;linha++){
+			para (inteiro coluna=0;coluna<limite2;coluna++){
+				exibir(""+vetorB[linha][coluna])
+			}		
 		}
 	
-		
-		
-		
 		}
 		
 	}
@@ -36,9 +38,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 226; 
+ * @POSICAO-CURSOR = 653; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetorA, 8, 10, 6}-{vetorB, 8, 35, 6};
+ * @SIMBOLOS-INSPECIONADOS = {vetorA, 12, 10, 6}-{vetorB, 12, 35, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

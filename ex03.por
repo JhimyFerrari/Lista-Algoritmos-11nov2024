@@ -1,6 +1,9 @@
 programa
 {
 	
+	funcao exibir(inteiro mensagem){
+		escreva("\n",mensagem)
+	}
 	funcao inicio()
 	{
 		const inteiro limite1=5
@@ -9,14 +12,14 @@ programa
 
 		para (inteiro linha=0;linha<limite1;linha++){
 			para (inteiro coluna=0;coluna<limite2;coluna++){
-				leia(vetor[linha][coluna])
+				vetor[linha][coluna]=sorteia(1,100)
 			}
 		}
 		escreva("\n")
 		para (inteiro linha=0;linha<limite1;linha++){
 			para (inteiro coluna=0;coluna<limite2;coluna++){
 				se(vetor[linha][coluna]%2==0){
-					escreva("\n",vetor[linha][coluna])
+					exibir(vetor[linha][coluna])
 			}
 		}
 		
@@ -30,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 241; 
+ * @POSICAO-CURSOR = 468; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

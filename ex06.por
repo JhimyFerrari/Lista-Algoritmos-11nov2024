@@ -1,6 +1,10 @@
 programa
 {
 	
+	funcao exibir(cadeia mensagem){
+		escreva("\n",mensagem)
+	}
+	
 	funcao inicio()
 	{
 		const inteiro limite1=6
@@ -23,7 +27,7 @@ programa
 			}
 			
 		}
-		escreva("\nAcima da média: ",soma)
+		exibir("Acima da média: "+soma)
 		
 		
 		
@@ -37,9 +41,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 304; 
+ * @POSICAO-CURSOR = 565; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetorA, 8, 10, 6};
+ * @SIMBOLOS-INSPECIONADOS = {vetorA, 12, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
